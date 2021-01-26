@@ -1,8 +1,3 @@
-set(COMPONENT_SRCDIRS ".")
-set(COMPONENT_ADD_INCLUDEDIRS "include")
-
-set(COMPONENT_REQUIRES "lwip")
-
-register_component()
-
-component_compile_options("-DLWIP_OPEN_SRC")
+idf_component_register(SRCS "tcpip_adapter_compat.c"
+                    INCLUDE_DIRS include
+                    REQUIRES esp_netif)

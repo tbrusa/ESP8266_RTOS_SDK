@@ -684,7 +684,7 @@ menu "LWIP"
 
     config LWIP_IPV6
         bool "Enable IPv6"
-        default n
+        default y
         help
             Enable IPV6
 
